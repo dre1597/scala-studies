@@ -1,1 +1,1 @@
-@main def hello() = println("Hello, Scala developer!")
+@main def hello(): Unit = println("Hello, Scala developer!")
