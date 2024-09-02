@@ -1,4 +1,6 @@
-@main def variables(): Unit = {
+package variables
+
+def variables(): Unit = {
   val a = 0
   val b = 1
   val msg = "Hello, World!"

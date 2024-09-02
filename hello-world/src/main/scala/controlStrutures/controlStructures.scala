@@ -1,3 +1,5 @@
+package controlStrutures
+
 def negativePositive(x: Int): Int = {
   if x < 0 then
     println(s"$x is negative")

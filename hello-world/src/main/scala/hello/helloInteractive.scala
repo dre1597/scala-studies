@@ -1,6 +1,8 @@
+package hello
+
 import scala.io.StdIn.readLine
 
-@main def helloInteractive(): Unit = {
+def helloInteractive(): Unit = {
   println("What is your name?")
   val name = readLine()
 
