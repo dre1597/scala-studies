@@ -24,3 +24,37 @@ def nestedFor(): Unit = {
   do println(s"i = $i, j = $j")
 }
 
+def forExpressions(): Unit = {
+  val ints = List(1, 2, 3, 4, 5)
+
+  val doubles = for i <- ints yield i * 2
+  val doubles2: List[Int] = List(2, 4, 6, 8, 10)
+  val doubles3 = for i <- ints yield i * 2
+  val doubles4 = for (i <- ints) yield i * 2
+  val doubles5 = for (i <- ints) yield (i * 2)
+  val doubles6 = for {i <- ints} yield (i * 2)
+
+  println(doubles)
+  println(doubles2)
+  println(doubles3)
+  println(doubles4)
+  println(doubles5)
+  println(doubles6)
+}
+
+def capitalize(): Unit = {
+  val names = List("chris", "ed", "maurice")
+  val capNames = for name <- names yield name.capitalize
+}
+
+def forMultipleLines(): Unit = {
+  val fruits = List("apple", "banana", "lime", "orange")
+
+  val fruitLengths = for
+    f <- fruits
+    if f.length > 4
+  yield
+    f.length
+
+  println(fruitLengths)
+}

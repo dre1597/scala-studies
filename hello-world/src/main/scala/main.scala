@@ -4,4 +4,7 @@ import forLoops.*
   forLoop()
   forLoopWithGuard()
   nestedFor()
+  forExpressions()
+  capitalize()
+  forMultipleLines()
 }
